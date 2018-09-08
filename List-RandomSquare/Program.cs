@@ -24,12 +24,21 @@ namespace List_RandomSquare
             {
                 // for each iteration I want to generate a random number inside the range
                 var randomNum = rand.Next(firstNumOfRange, secondNumOfRange);
-                listOfRandomNumbers.Add(randomNum);
-                Console.WriteLine(listOfRandomNumbers);
                 // add randomly generated number to the list
+                listOfRandomNumbers.Add(randomNum);
+                // return the list
+                Console.WriteLine(randomNum);
             }
-            
 
+            var listOfSquaredNumbers = new List<double>();
+
+            foreach (var num in listOfRandomNumbers)
+            {
+                // get the num and square it 
+                var squaredNum = Math.Pow(num, 2);
+                listOfSquaredNumbers.Add(squaredNum);
+                Console.WriteLine(squaredNum);
+            }
 
         }
     }
