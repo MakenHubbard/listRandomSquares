@@ -40,6 +40,18 @@ namespace List_RandomSquare
                 Console.WriteLine(squaredNum);
             }
 
-        }
+            var listOfEvenSquaredNums = new List<double>();
+;
+            foreach (var num in listOfSquaredNumbers)
+            {
+                //remove the odd numbers
+                if (num % 2 == 0)
+                {
+                    listOfEvenSquaredNums.Add(num);
+                    Console.WriteLine(num);
+                }
+            }
+
+            }
     }
 }
