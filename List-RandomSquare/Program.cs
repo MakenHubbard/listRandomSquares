@@ -19,6 +19,7 @@ namespace List_RandomSquare
             var rand = new Random();
             var listOfRandomNumbers = new List<int>();
 
+            Console.WriteLine($"Here are your numbers: ");
 
             for (int i = numOfRandNums; i > 0; i--)
             {
@@ -32,6 +33,7 @@ namespace List_RandomSquare
 
             var listOfSquaredNumbers = new List<double>();
 
+            Console.WriteLine($"Here are the numbers that were squared: ");
             foreach (var num in listOfRandomNumbers)
             {
                 // get the num and square it 
@@ -41,7 +43,8 @@ namespace List_RandomSquare
             }
 
             var listOfEvenSquaredNums = new List<double>();
-;
+            ;
+            Console.WriteLine($"These are numbers that are left:");
             foreach (var num in listOfSquaredNumbers)
             {
                 //remove the odd numbers
@@ -51,7 +54,7 @@ namespace List_RandomSquare
                     Console.WriteLine(num);
                 }
             }
-
-            }
+            Console.ReadLine();
+        }
     }
 }
